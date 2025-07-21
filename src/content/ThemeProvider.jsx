@@ -6,8 +6,8 @@ export const ThemeProvider = ({ children }) => {
 
   const toggleTheme = () => {
     console.log(theme)
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    localStorage.setItem ("theme", theme === "light" ? "dark" : "light");
+    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+    localStorage.setItem ("theme", theme ==="dark" ? "light" : "dark");
   };
 
   useEffect(() => {
